@@ -3,7 +3,7 @@
     Author: Amal Majeed
     Version: 1.0
     Created: 05/21/22
-    Updated: 05/22/22
+    Updated: 06/22/22
     Purpose: Script that automatically cleans up downloads and desktop to categorized folders in the macOS environment.
 
 '''
@@ -212,6 +212,10 @@ class downloadBroom:
 
 
 class Watcher:
+    """
+        This is the filesystem event monitor. Initialises a watchdog observer property 'observer' and sets a 
+        FileSystemEventHandler as the handler and the directory points to the path of the directory being watched. 
+    """
 
     def __init__(self, directory='.', handler=FileSystemEventHandler()):
         self.observer = Observer()
