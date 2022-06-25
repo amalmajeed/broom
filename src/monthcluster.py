@@ -40,3 +40,11 @@ class MonthCluster:
                 except Exception as e:
                     print(
                         f"Exception occured while moving to {self.destination} as : {e}\n")
+
+
+mCluster_6 = MonthCluster(month=6)
+mCluster_3 = MonthCluster(month=3)
+mCluster_1 = MonthCluster(month=1)
+mCluster_6.folderiser(endpoint="Desktop")
+mCluster_3.folderiser(endpoint="Desktop")
+mCluster_1.folderiser(endpoint="Desktop")
